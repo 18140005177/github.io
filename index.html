@@ -2,15 +2,24 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Superkit青少年高尔夫精英联赛年度总决赛 - 2025年12月29日-2026年1月2日，东莞观澜湖高尔夫球会">
     <meta name="keywords" content="青少年高尔夫,Superkit联赛,高尔夫总决赛">
     <meta name="author" content="Superkit青少年高尔夫精英联赛组委会">
+    <meta name="theme-color" content="#3498db">
+    <meta name="mobile-web-app-capable" content="yes">
     <title>Superkit青少年高尔夫精英联赛年度总决赛</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- 优先加载关键CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    
+    <!-- 优化字体加载 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </noscript>
 </head>
 <body>
     <!-- 页面顶部横幅 -->
@@ -32,8 +41,8 @@
             </div>
             <ul class="navbar-menu">
             <li><a href="#" class="nav-link">首页</a></li>
-            <li><a href="#intro" class="nav-link">赛事介绍<span class="en-translation">Tournament Info</span></a></li>
             <li><a href="#invitation" class="nav-link">邀请函<span class="en-translation">Invitation</span></a></li>
+            <li><a href="#intro" class="nav-link">赛事介绍<span class="en-translation">Tournament Info</span></a></li>
             <li><a href="#schedule" class="nav-link">赛事日程安排<span class="en-translation">Schedule</span></a></li>
             <li><a href="#location" class="nav-link">赛事地点<span class="en-translation">Location</span></a></li>
             <li><a href="#fees" class="nav-link">赛事费用<span class="en-translation">Fees</span></a></li>
@@ -61,6 +70,20 @@
                         <a href="#location" class="btn btn-secondary">赛事地点<span class="en-translation">Location</span></a>
                         <a href="#fees" class="btn btn-secondary">赛事费用<span class="en-translation">Tournament Fees</span></a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 邀请函板块 -->
+    <section id="invitation" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">邀请函<span class="en-translation">Invitation</span></h2>
+            <div class="invitation-content fade-in delay-1">
+                <p class="invitation-text">恭喜您成功获得Superkit青少年高尔夫精英联赛年度总决赛参赛资格，诚邀您准时参加!<br><span class="en-detail">Congratulations on qualifying for the Superkit Junior Golf Elite League Annual Finals! We sincerely invite you to attend on time!</span></p>
+                <div class="invitation-details">
+                    <p>这是一场汇聚全国青少年高尔夫精英的年度盛事，我们期待您在赛场上展现出色的球技和体育精神。<br><span class="en-detail">This is an annual grand event gathering junior golf elites from across the country. We look forward to seeing you showcase your outstanding golf skills and sportsmanship on the field.</span></p>
+                    <p>请您提前做好准备，按时参加各项活动，共同创造难忘的高尔夫回忆。<br><span class="en-detail">Please prepare in advance and attend all activities on time to create unforgettable golf memories together.</span></p>
                 </div>
             </div>
         </div>
@@ -117,20 +140,6 @@
                         <li>媒体全程报道，提升赛事影响力<br><span class="en-detail">Full media coverage, enhancing tournament influence</span></li>
 
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- 邀请函板块 -->
-    <section id="invitation" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in">邀请函<span class="en-translation">Invitation</span></h2>
-            <div class="invitation-content fade-in delay-1">
-                <p class="invitation-text">恭喜您成功获得Superkit青少年高尔夫精英联赛年度总决赛参赛资格，诚邀您准时参加!<br><span class="en-detail">Congratulations on qualifying for the Superkit Junior Golf Elite League Annual Finals! We sincerely invite you to attend on time!</span></p>
-                <div class="invitation-details">
-                    <p>这是一场汇聚全国青少年高尔夫精英的年度盛事，我们期待您在赛场上展现出色的球技和体育精神。<br><span class="en-detail">This is an annual grand event gathering junior golf elites from across the country. We look forward to seeing you showcase your outstanding golf skills and sportsmanship on the field.</span></p>
-                    <p>请您提前做好准备，按时参加各项活动，共同创造难忘的高尔夫回忆。<br><span class="en-detail">Please prepare in advance and attend all activities on time to create unforgettable golf memories together.</span></p>
                 </div>
             </div>
         </div>
@@ -229,10 +238,7 @@
                     </div>
                 </div>
                 
-                <div class="location-map">
-                    <!-- 地图嵌入 -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.279641636972!2d114.11894431439579!3d22.863453445331703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34035f9b39944987%3A0x55a97368a3e736a1!2sMission%20Hills%20Golf%20Club!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+
             </div>
         </div>
     </section>
